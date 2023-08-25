@@ -819,29 +819,29 @@
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-  (function() {
-    emailjs.init("h8s4g7h4yAgMruUze");
+//   (function() {
+//     emailjs.init("h8s4g7h4yAgMruUze");
 
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault();
+//     document.getElementById('contactForm').addEventListener('submit', function(event) {
+//       event.preventDefault();
 
-      // This is where you define your email template
-      var templateParams = {
-        from_name: document.getElementById('name').value,
-        from_email: document.getElementById('email').value,
-        message: document.getElementById('message').value
-      };
+//       // This is where you define your email template
+//       var templateParams = {
+//         from_name: document.getElementById('name').value,
+//         from_email: document.getElementById('email').value,
+//         message: document.getElementById('message').value
+//       };
 
-      emailjs.send('service_qanxv6w', 'template_5g7ruee', templateParams)
-        .then(function(response) {
-          console.log('Email sent successfully:', response);
-          alert('Email sent successfully!');
-        }, function(error) {
-          console.log('Email send error:', error);
-          alert('Error sending email.');
-        });
-    });
-  })();
+//       emailjs.send('service_qanxv6w', 'template_5g7ruee', templateParams)
+//         .then(function(response) {
+//           console.log('Email sent successfully:', response);
+//           alert('Email sent successfully!');
+//         }, function(error) {
+//           console.log('Email send error:', error);
+//           alert('Error sending email.');
+//         });
+//     });
+//   })();
 </script>
 
     <!-- ==================== SCROLL REVEAL ANIMATION ==================== -->
