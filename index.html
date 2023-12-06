@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/calendar.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/github-calendar@2.0.0/dist/github-calendar.min.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <script
   src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
@@ -663,9 +665,8 @@
             </div>
             
             <span  class="section_subtitle">Github Calendar</span>
-            <div class="react-activity-calendar calendar">
-               <!-- Loading stuff -->
-                Loading the data just for you.
+            <div  class="react-activity-calendar calendar">
+                   <img style="width: 100%;" src="https://ghchart.rshah.org/rishilpatel157" alt="">
             </div>
 
 
@@ -715,7 +716,7 @@
                         <div>
                             <h3 class="contact_title">LinkedIn</h3>
                             <a href="https://www.linkedin.com/in/rishil-patel-223138168/" target="_blank">
-                                <span class="contact_subtitle">https://www.linkedin.com/in/rishil-patel-223138168/</span>
+                                <span class="contact_subtitle">https://www.linkedin.com/in/rishilpatel157/</span>
                             </a>
                         </div>
                     </div>
@@ -775,7 +776,7 @@
                         <a href="https://github.com/rishilpatel157" target="_blank" class="footer_social">
                             <i class="uil uil-github-alt"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/rishil-patel-223138168/" target="_blank" class="footer_social">
+                        <a href="https://www.linkedin.com/in/rishilpatel157/" target="_blank" class="footer_social">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
                         
@@ -798,9 +799,14 @@
     <script src="./script/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/github-calendar@1.1.0/dist/github-calendar.min.js"></script>
+
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- ==================== AUTO-TYPE SCRIPT ==================== -->
+    <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
     <script>
         var typed = new Typed(".auto-type", {
             strings: ["Java Backend Developer"],
@@ -843,11 +849,19 @@
     <!-- ==================== GITHUB CALENDER ==================== -->
     <script>
         // or enable responsive functionality
-        GitHubCalendar(".calendar", "rishilpatel157", {
-            responsive: true,
-            global_stats: true,
-            tooltips: true,
-        });
+        document.addEventListener("DOMContentLoaded", function () {
+    GitHubCalendar(".calendar", "rishilpatel157", {
+        responsive: true,
+        global_stats: true,
+        tooltips: true,
+    });
+});
+
+    //     GitHubCalendar(".calendar", "rishilpatel157", {
+    //    proxy (username) {
+    //      return fetch(`https://your-proxy.com/github?user=rishilpatel157`)
+    //    }
+    // }).then(r => r.text())
     </script>
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
